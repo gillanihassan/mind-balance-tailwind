@@ -1,9 +1,10 @@
 import React from "react";
+import HeroSection from "./components/hero-section/HeroSection";
 
 function Page() {
   return (
     <div>
-      <h2>This is a Page Section</h2>
+      <HeroSection />
     </div>
   );
 }
