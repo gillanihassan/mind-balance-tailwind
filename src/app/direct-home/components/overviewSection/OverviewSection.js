@@ -7,10 +7,10 @@ export default function OverviewSection() {
         <div className="w-full max-w-[1400px] mx-auto py-10 px-4 md:px-10 mt-0">
             {/* Top Heading */}
             <div className="text-center mb-10">
-                <h2 className="text-[32px] font-bold text-black font-['Inter']">
+                <h2 className="text-[32px] font-bold text-black font-Inter">
                     這是一段隨機的文本
                 </h2>
-                <p className="mt-4 text-[#808080] text-[18px] font-['Inter'] font-normal">
+                <p className="mt-4 text-[#808080] text-[18px] font-Inter font-normal">
                     這是一段隨機的文本，用於填充頁面或展示設計
                 </p>
             </div>
@@ -27,10 +27,10 @@ export default function OverviewSection() {
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#025858A1] via-[#025858A1] to-[#001C1C7D] z-10 rounded-[22px]" />
                     <div className="absolute bottom-0 p-6 z-20">
-                        <h5 className="text-white text-[25px] font-semibold font-['Inter'] max-w-[390px]">
+                        <h5 className="text-white text-[25px] font-semibold font-Inter max-w-[390px]">
                             這是一段隨機的文本，用於填充頁面或展示設計的格式。設計師通常
                         </h5>
-                        <p className="mt-2 text-white text-[16px] font-normal font-['Inter']">
+                        <p className="mt-2 text-white text-[16px] font-normal font-Inter">
                             這是一段隨機的文本 →
                         </p>
                     </div>
@@ -46,10 +46,10 @@ export default function OverviewSection() {
                     />
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#025858A1] via-[#025858A1] to-[#001C1C7D] z-10 rounded-[22px]" />
                     <div className="absolute bottom-0 p-6 z-20">
-                        <h5 className="text-white text-[25px] font-semibold font-['Inter'] max-w-[390px]">
+                        <h5 className="text-white text-[25px] font-semibold font-Inter max-w-[390px]">
                             這是一段隨機的文本，用於填充頁面或展示設計的格式。設計師通常
                         </h5>
-                        <p className="mt-2 text-white text-[16px] font-normal font-['Inter']">
+                        <p className="mt-2 text-white text-[16px] font-normal font-Inter">
                             這是一段隨機的文本 →
                         </p>
                     </div>

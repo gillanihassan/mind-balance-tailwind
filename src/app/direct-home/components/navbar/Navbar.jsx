@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <nav className="bg-white mt-2 max-w-[1400px] mx-auto">
+         <nav className="bg-white mt-2 max-w-[1400px] mx-auto">
             <div className="max-w-screen-1xl flex flex-wrap items-center justify-between mx-auto px-6 md:px-6">
-                {/* Logo */}
+             
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img
                         src="/assests/direct-home/navbar/logo.png"
@@ -12,27 +12,24 @@ function Navbar() {
                         alt="Flowbite Logo"
                     />
                 </a>
-
-                {/* Desktop Buttons + Toggle */}
+               
                 <div className="flex md:order-2 space-x-3 rtl:space-x-reverse items-center">
-                    {/* DESKTOP buttons only */}
+                 
                     <div className="hidden md:flex space-x-3">
                         <button
                             type="button"
-                            className="bg-[#FFFFFF] border border-[#E0AF54] rounded-[5px] px-7 py-[6px] text-[#E0AF54] font-normal text-base"
+                            className="bg-[#FFFFFF] border border-[#E0AF54] rounded-[5px] px-7 py-[6px] text-[#E0AF54] font-normal text-base cursor-pointer"
                         >
                             註冊
                         </button>
                         <button
                             type="button"
-                            className="bg-[#E0AF54] border border-[#E0AF54] rounded-[5px] px-7 py-[6px] text-[#FFFFFF] font-normal text-base"
+                            className="bg-[#E0AF54] border border-[#E0AF54] rounded-[5px] px-7 py-[6px] text-[#FFFFFF] font-normal text-base cursor-pointer"
                         >
                             登入
                         </button>
-            
                     </div>
-
-                    {/* Toggle Button for Mobile */}
+                   
                     <button
                         data-collapse-toggle="navbar-sticky"
                         type="button"
@@ -57,58 +54,41 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-
-                {/* Navbar Links + MOBILE Buttons */}
+               
                 <div
                     className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                     id="navbar-sticky"
                 >
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         <li>
-                            <a href="#" className="text-[#000000] tracking-[0.8px] text-base leading-9">
+                            <a href="#" className="text-[#000000] font-normal tracking-[0.8px] text-base leading-9">
                                 買樓
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-[#000000] tracking-[0.8px] text-base leading-9">
+                            <a href="#" className="text-[#000000] font-normal tracking-[0.8px] text-base leading-9">
                                 租屋
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-[#000000] tracking-[0.8px] text-base leading-9">
+                            <a href="#" className="text-[#000000] font-normal tracking-[0.8px] text-base leading-9">
                                 新盤
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-[#000000] tracking-[0.8px] text-base leading-9">
+                            <a href="#" className="text-[#000000] font-normal tracking-[0.8px] text-base leading-9">
                                 置業按揭
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-[#000000] tracking-[0.8px] text-base leading-9">
+                            <a href="#" className="text-[#000000] font-normal tracking-[0.8px] text-base leading-9">
                                 自助放盤
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-[#000000] tracking-[0.8px] text-base leading-9">
+                            <a href="#" className="text-[#000000] font-normal tracking-[0.8px] text-base leading-9">
                                 更多服務
                             </a>
-                        </li>
-
-                        {/* ✅ MOBILE Buttons (only visible below md) */}
-                        <li className="block md:hidden mt-3 space-y-2">
-                            <button
-                                type="button"
-                                className="w-full bg-[#FFFFFF] border border-[#E0AF54] rounded-[5px] px-7 py-[6px] text-[#E0AF54] font-normal text-base"
-                            >
-                                one
-                            </button>
-                            <button
-                                type="button"
-                                className="w-full bg-[#E0AF54] border border-[#E0AF54] rounded-[5px] px-7 py-[6px] text-[#FFFFFF] font-normal text-base"
-                            >
-                                two
-                            </button>
                         </li>
                     </ul>
                 </div>

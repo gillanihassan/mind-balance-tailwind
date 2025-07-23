@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function TestimonialSection() {
   return ( 
-    <div className="bg-[#E6F6F8] py-16 px-8 mt-14 h-[1185px] md:h-[585px] w-full max-w-[1400px] mx-auto">
-      <div className="flex flex-col md:flex-row">
+    <div className="bg-[#E6F6F8] py-16 px-8 mt-14 h-[1185px] lg:h-[585px] w-full max-w-[1400px] mx-auto">
+      <div className="flex flex-col lg:flex-row">
         {/* Left Column */}
         <div className="md:w-7/12">
           <h4 className="mb-5 text-[35px] font-semibold font-Inter text-black text-center">真實用家點講？</h4>

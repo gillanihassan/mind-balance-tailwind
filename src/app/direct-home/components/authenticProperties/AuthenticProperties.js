@@ -32,18 +32,18 @@ const AuthenticProperties = () => {
   ];
 
   return (
-    <div className="max-w-[1400px] mx-auto bg-[#004F59] rounded-[28px] p-4 md:p-10">
-      <button className="bg-white text-[#004F59] rounded-md text-sm font-medium px-4 py-2 mb-3">
+    <div className="max-w-[1400px] mx-auto bg-[#004F59] rounded-[28px] p-4 md:p-10 mt-17">
+      <button className="font-inter bg-white text-[#004F59] rounded-md text-sm font-medium px-4 py-2 mb-3">
         幫你查冊，唔怕假盤！
       </button>
 
-      <h2 className="text-white text-[28px] md:text-[35px] font-medium max-w-[600px] mb-6">
+      <h2 className="font-inter text-white text-[28px] leading-[36px] md:text-[35px] font-semibold max-w-[600px] md:leading-[44px]">
         買樓遇假盤？怕遇人不熟？DirectHome 已經查冊認證所有放盤，
         幫你過濾風險，睇樓安心無煩惱。
       </h2>
 
-      <div className="grid lg:grid-cols-2 gap-6 items-center">
-        <div className="relative top-12 lg:top-10 md:top-16 sm:top-0">
+      <div className="grid xl:grid-cols-2 gap-6 items-center">
+        <div className="relative top-12 lg:top-10 md:top-16 sm:top-0 flex justify-center xl:justify-start">
           <Image
             src="/assests/direct-home/authentic/imgOne.png"
             width={500}
@@ -52,7 +52,8 @@ const AuthenticProperties = () => {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-12 md:mt-14">
+        <div className="flex justify-center ">
+          <div className="grid md:grid-cols-2 gap-6 mt-15 xl:mt-0">
           {cardData.map((card, index) => (
             <div
               key={index}
@@ -78,6 +79,7 @@ const AuthenticProperties = () => {
               ))}
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>

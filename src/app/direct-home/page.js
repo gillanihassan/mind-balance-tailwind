@@ -12,25 +12,23 @@ import MedalSection from './components/medalSection/MedalSection'
 import TestimonialSection from './components/testimonialSection/TestimonialSection'
 import OverviewSection from './components/overviewSection/OverviewSection'
 import Footer from './components/Footer/Footer'
-// import HeroSection from './components/heroSection/HeroSection'
 
 function page() {
     return (
         <div>
           <TopSection />
           <Navbar />
-          {/* <HeroSection /> */}
           <BusinessSection />
           <AuthenticProperties />
           <EstateProcess />
           <SellingSection />
-          <ProductionSection />
-          <FormCalculator />
-          <ThreeStepGuide />
-          <MedalSection />
-          <TestimonialSection />
-          <OverviewSection />
-          <Footer />
+            <ProductionSection />
+            <FormCalculator />
+            <ThreeStepGuide />
+            <MedalSection />
+            <TestimonialSection />
+            <OverviewSection />
+            <Footer />
         </div>
     )
 }

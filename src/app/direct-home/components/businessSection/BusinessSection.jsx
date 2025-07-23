@@ -18,7 +18,7 @@ const contentData = [
   {
     img: '/assests/direct-home/businessSection/icon-three.png',
     title: '智能配對準買家',
-    desc: '大數據推送，提升睇樓機會',
+    desc: '專人教你簽、陪你傾，置業唔再怕',
     action: '立即了解服務',
   },
   {
@@ -29,18 +29,18 @@ const contentData = [
   },
   {
     img: '/assests/direct-home/businessSection/icon-five.png',
-    title: '樓盤即上28Hse',
-    desc: '一鍵同步28Hse，增加曝光',
+    title: '資料安全有保障',
+    desc: '實名認證，保障買賣雙方利益',
     action: '查看上載流程',
   },
 ];
 
 export default function BusinessSection() {
   return (
-    <div className="max-w-[1400px] mx-auto mt-10 mb-10 p-6 rounded-md shadow-[0_10px_18px_0_rgba(0,0,0,0.1)] bg-white">
-      <div className="flex flex-wrap justify-center gap-6 md:gap-33">
+    <div className="max-w-[1400px] mx-auto mt-5 md:mt-10 mb-10 p-4 md:p-6 rounded-md shadow-[0_10px_18px_0_rgba(0,0,0,0.1)] bg-white">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-30">
         {contentData.map((item, index) => (
-          <div key={index} className="w-[160px] text-start">
+          <div key={index} className="w-[165px] text-start">
             <Image
               src={item.img}
               alt="business image"
@@ -50,7 +50,7 @@ export default function BusinessSection() {
             <h5 className="font-inter font-semibold text-xl text-[#000000] mt-4">
               {item.title}
             </h5>
-            <p className="font-inter font-normal text-sm leading-[19.74px] text-[#808080] mt-2">
+            <p className="font-inter font-normal text-sm leading-[19.74px] text-[#808080] mt-2 w-full max-w-[146px]">
               {item.desc.split('\n').map((line, i) => (
                 <span key={i}>
                   {line}

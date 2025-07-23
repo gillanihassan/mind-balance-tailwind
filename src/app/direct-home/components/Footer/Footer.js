@@ -41,7 +41,7 @@ export default function Footer() {
       <div className="bg-[#004F59]">
         <div className="w-full max-w-[1400px] mx-auto px-4 py-6 sm:p-10">
           {/* Logo */}
-          <div className="my-8">
+          <div className="my-8 mb-14">
             <Image
               src="/assests/direct-home/footerSection/footerLogo.png"
               width={226}

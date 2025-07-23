@@ -61,7 +61,7 @@ export default function ThreeStepFlow() {
       <h2 className="text-black font-semibold text-[35px] font-['Inter']">
         簡單三步，搞掂放盤買賣
       </h2>
-      <p className="mt-4 mb-10 text-gray-500 font-['Inter'] text-[18px] font-normal">
+      <p className="mt-4 mb-10 text-gray-500 font-Inter text-[18px] font-normal">
         從登記到成交，全都一步步清晰完成， 唔使煩惱記
       </p>
 
@@ -82,17 +82,17 @@ export default function ThreeStepFlow() {
 
               {card.type === 'users' && (
                 <div className="flex flex-col justify-start items-start p-4 bg-white max-w-[270px] rounded-md shadow-md w-full min-h-[320px]">
-                  <h5 className="text-start mb-3 text-[#111235] font-semibold text-[24px] font-['Inter']">
+                  <h5 className="text-start mb-3 text-[#111235] font-semibold text-[24px] font-Inter">
                     {card.heading}
                   </h5>
                   {card.users.map((user, i) => (
                     <div key={i} className="flex mt-3 items-center">
                       <Image src={user.avatar} width={40} height={40} alt={user.name} />
                       <div className="ml-3">
-                        <p className="mb-0 text-[#111235] text-[16px] font-medium font-['Inter']">
+                        <p className="mb-0 text-[#111235] text-[16px] font-medium font-Inter">
                           {user.name}
                         </p>
-                        <p className="text-start text-[#6c6c6c] text-[12px] font-semibold font-['Inter'] flex items-center">
+                        <p className="text-start text-[#6c6c6c] text-[12px] font-semibold font-Inter flex items-center">
                           <Image src={user.check} width={11} height={11} alt="Check" />
                           {user.role}
                         </p>
@@ -125,7 +125,7 @@ export default function ThreeStepFlow() {
                             msg.from === 'left'
                               ? 'bg-[#004f59] rounded-br-xl'
                               : 'bg-[#d8a53f] rounded-bl-xl'
-                          } text-white rounded-t-xl py-2 px-4 text-sm font-['Inter']`}
+                          } text-white rounded-t-xl py-2 px-4 text-sm font-Inter`}
                         >
                           {msg.text}
                         </p>
