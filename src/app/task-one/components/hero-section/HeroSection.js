@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 function HeroSection() {
@@ -19,14 +20,15 @@ function HeroSection() {
         </p>
         <div className="mt-5 flex flex-col md:flex-row gap-4">
           <div>
-            <button className="bg-[#4CAF50] font-roboto font-medium text-lg text-[#FFFFFF] px-4 py-1 rounded-lg">
-              Join For Free
-            </button>
+            <Button variant="green">Join For Free</Button>
           </div>
           <div>
-            <button className="bg-[#FFA726] font-roboto font-medium text-lg text-[#FFFFFF] px-4 py-1 rounded-lg">
+            <Button variant="yellow">Already Have an Account</Button>
+          </div>
+          <div>
+            <Button className="bg-[#4CAF50] hover:bg-accent">
               Already Have an Account
-            </button>
+            </Button>
           </div>
         </div>
       </div>
