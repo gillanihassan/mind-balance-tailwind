@@ -12,6 +12,19 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { useState } from 'react';
 
 const users = [
   {
@@ -117,6 +130,8 @@ const users = [
 ];
 
 function SmartGuyUserPage() {
+  const [selectedUser, setSelectedUser] = useState(null);
+
   return (
     <div className='p-5' >
       <div className='flex justify-between'>
@@ -133,7 +148,7 @@ function SmartGuyUserPage() {
           width={16}
           height={16}
           alt="Picture of the author"
-        /> Add User</Button>
+        /> Add</Button>
       </div>
       <div className="border rounded-lg mt-7">
         <Table className="border-rounded-lg">
@@ -163,19 +178,107 @@ function SmartGuyUserPage() {
                 <TableCell className="px-10">{user.created}</TableCell>
                 <TableCell>
                   <div className='flex justify-center items-center gap-4'>
-                    <Image
-                      src="/assests/smart-guy/edit.png"
-                      width={20}
-                      height={20}
-                      alt="Picture of the author"
-                      className='cursor-pointer'
-                    />
+
+                    <Dialog>
+                      <form>
+                        <DialogTrigger asChild>
+                          <Image
+                            src="/assests/smart-guy/edit.png"
+                            width={20}
+                            height={20}
+                            alt="Picture of the author"
+                            className='cursor-pointer'
+                          />
+                        </DialogTrigger>
+                        <DialogContent className="sm:max-w-[425px]">
+                          <DialogHeader>
+                            <DialogTitle>Edit profile</DialogTitle>
+                            <DialogDescription>
+                              Make changes to your profile here. Click save when you&apos;re
+                              done.
+                            </DialogDescription>
+                          </DialogHeader>
+                          <div className="grid gap-4">
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">First Name</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.firstName || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">Last Name</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.lastName || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">Email</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.email || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">City</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.city || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">Country</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.country || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">Country</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.phone || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                            <div className="grid gap-3">
+                              <Label htmlFor="name-1">Created</Label>
+                              <Input
+                                id="firstName"
+                                name="firstName"
+                                defaultValue={user.created || ""}
+                                className="col-span-3"
+                              />
+                            </div>
+                          </div>
+                          <DialogFooter>
+                            <DialogClose asChild>
+                              <Button variant="outline" className="cursor-pointer">Cancel</Button>
+                            </DialogClose>
+                            <Button type="submit" className="cursor-pointer">Save changes</Button>
+                          </DialogFooter>
+                        </DialogContent>
+                      </form>
+                    </Dialog>
                     <Image
                       src="/assests/smart-guy/delete.png"
                       width={20}
                       height={20}
                       alt="Picture of the author"
                       className='cursor-pointer'
+                      onClick={() => setSelectedUser(user)}
                     />
                   </div>
                 </TableCell>
